@@ -14,22 +14,26 @@
     <div
       class="flex items-center p-4 w-96 h-14 rounded-md bg-blue-950 bg-opacity-80 relative"
     >
-      <h1 class="text-base text-white font-light text-center mr-1">
-        Passengers Entered
+      <h1
+        class="text-base bg-white rounded-md w-32 h-10 pt-3 pb-3 pr-3 pl-3 mr-8 uppercase text-yellow-600 leading-tight font-light "
+      >
+        Passengers
       </h1>
       <h2
-        class="text-2xl font-extrabold text-center pt-2 bg-white rounded-md w-16 h-12"
+        class="text-2xl font-extrabold text-center -ml-5 pt-2 bg-white rounded-md w-16 h-12"
         id="counting"
       >
         0
       </h2>
-      <button onclick="counts()"
-        class="w-32 h-12 bg-white rounded-md pr-3 pl-3 font-semibold text-yellow-500 text-center absolute right-1"
+      <button
+        onclick="counts()"
+        class="w-32 h-10 bg-white rounded-md pr-3 pl-3 font-light text-yellow-600 text-center absolute right-6"
         id="counter"
       >
         COUNTER
       </button>
     </div>
+    <button onclick="save()" id="save" class="w-96 mt-3 bg-opacity-35 bg-blue-950">SAVE</button>
 
     <script src="./script.js"></script>
   </body>
