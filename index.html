@@ -15,7 +15,7 @@
       class="flex items-center p-4 w-96 h-14 rounded-md bg-blue-950 bg-opacity-80 relative"
     >
       <h1
-        class="text-base bg-white rounded-md w-32 h-10 pt-3 pb-3 pr-3 pl-3 mr-8 uppercase text-yellow-600 leading-tight font-light "
+        class="text-base bg-white rounded-md w-32 h-10 pt-3 pb-3 pr-3 pl-3 mr-8 uppercase text-yellow-600 leading-tight font-light"
       >
         Passengers
       </h1>
@@ -33,7 +33,14 @@
         COUNTER
       </button>
     </div>
-    <button onclick="save()" id="save" class="w-96 mt-3 bg-opacity-35 bg-blue-950">SAVE</button>
+    <button 
+      onclick="save()"
+      id="save"
+      class="w-96 mt-3 bg-opacity-100 text-white bg-blue-950"
+    >
+      SAVE
+    </button>
+    <p id="previousEntries" class="w-96 min-h-96 p-4 bg-sky-300 rounded-md mt-3 text-center"></p>
 
     <script src="./script.js"></script>
   </body>
