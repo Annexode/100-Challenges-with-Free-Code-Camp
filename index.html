@@ -3,14 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/output.css">
-    <title>100 Challenges</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Calculator</title>
   </head>
-  <body>
+  <body class="font-Montserrat grid grid-cols-1 place-items-center p-40">
+    <!-- CALCULATOR -->
+    <div class="mt-20 w-96 bg-sky-300 p-10 rounded-md">
+      <div class="flex justify-center gap-3 mb-10">
+        <span class="underline font-medium text-2xl" id="num1_el"></span>
+        <span class="underline font-medium text-2xl" id="num2_el"></span>
+      </div>
+      <section class="grid grid-cols-1 place-items-center" id="operations">
+        <div class="flex gap-2 mb-4" id="addSubstractDivide">
+          <button
+            onclick="add()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="add"
+          >
+            Add
+          </button>
+          <button
+            onclick="substract()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="substract"
+          >
+            Substract
+          </button>
+          <button
+            onclick="divide()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="divide"
+          >
+            Divide
+          </button>
+        </div>
+        <div class="mb-10" id="multiply">
+          <button
+            onclick="multiply()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="multiply"
+          >
+            Multiply
+          </button>
+        </div>
+
+        <p id="result">SUM:</p>
+      </section>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
-
-
-
-
