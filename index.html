@@ -33,14 +33,78 @@
         COUNTER
       </button>
     </div>
-    <button 
+    <button
       onclick="save()"
       id="save"
       class="w-96 mt-3 bg-opacity-100 text-white bg-blue-950"
     >
       SAVE
     </button>
-    <p id="previousEntries" class="w-96 min-h-96 p-4 bg-sky-300 rounded-md mt-3 text-center"></p>
+
+    <p
+      id="previousEntries"
+      class="w-96 min-h-96 p-4 bg-sky-300 rounded-md mt-3 text-center"
+    ></p>
+    <!-- NIKE SHOES -->
+    <div class="mt-20 w-96 relative">
+      <img
+        class="w-96 rounded-md"
+        src="./assets/nikeshoes.webp"
+        alt="The red nike Blanded shoes"
+      />
+      <p class="absolute bottom-0 left-3 p-5">Nike shoes</p>
+      <button
+        onclick="errorMessage()"
+        class="absolute bg-white bottom-5 left-5 border-2 rounded-3xl border-black p-2 mb-6"
+        id="price"
+      >
+        Purchase - $149
+      </button>
+      <p class="absolute text-red-600 right-5 mt-1 bottom-10" id="error"></p>
+    </div>
+    <!-- CALCULATOR -->
+    <div class="mt-20 w-96 bg-sky-300 p-10 rounded-md">
+      <div class="flex justify-center gap-3 mb-10">
+        <span class="underline font-medium text-2xl" id="num1_el"></span>
+        <span class="underline font-medium text-2xl" id="num2_el"></span>
+      </div>
+      <section class="grid grid-cols-1 place-items-center" id="operations">
+        <div class="flex gap-2 mb-4" id="addSubstractDivide">
+          <button
+            onclick="add()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="add"
+          >
+            Add
+          </button>
+          <button
+            onclick="substract()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="substract"
+          >
+            Substract
+          </button>
+          <button
+            onclick="divide()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="divide"
+          >
+            Divide
+          </button>
+        </div>
+        <div class="mb-10" id="multiply">
+          <button
+            onclick="multiply()"
+            class="pt-2 pb-2 pr-4 pl-4 border-2 border-black rounded-md"
+            id="multiply"
+          >
+            Multiply
+          </button>
+        </div>
+
+        <p id="result">SUM:</p>
+      </section>
+    </div>
 
     <script src="./script.js"></script>
   </body>
